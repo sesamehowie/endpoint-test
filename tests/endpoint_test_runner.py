@@ -8,9 +8,17 @@ from src.client.request_client import RequestClient
 client = RequestClient()
 test_data = [
     {
-        "endpoint": "/api/",
+        "endpoint": "/api/monroll/biggest-win",
         "method": "GET",
-    }
+    },
+    {
+        "endpoint": "/api/monroll/game-history/pages/2",
+        "method": "GET",
+    },
+    {
+        "endpoint": "/api/monroll/game-history/pages/3",
+        "method": "GET",
+    },
 ]
 
 
@@ -37,5 +45,7 @@ def test():
             print(json.dumps(res, indent=4))
         else:
             logger.warning(f"Item {i} | Empty response")
+
+        i += 1
 
         random_sleep(RANDOM_SLEEP_RANGE)
