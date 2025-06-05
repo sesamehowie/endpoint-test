@@ -8,15 +8,7 @@ from src.client.request_client import RequestClient
 client = RequestClient()
 test_data = [
     {
-        "endpoint": "/api/monroll/biggest-win",
-        "method": "GET",
-    },
-    {
-        "endpoint": "/api/monroll/game-history/pages/2",
-        "method": "GET",
-    },
-    {
-        "endpoint": "/api/monroll/game-history/pages/3",
+        "endpoint": "/api/airdrop-pool",
         "method": "GET",
     },
 ]
