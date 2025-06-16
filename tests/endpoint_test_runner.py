@@ -8,7 +8,7 @@ from src.client.request_client import RequestClient
 client = RequestClient()
 test_data = [
     {
-        "endpoint": "/api/airdrop-pool",
+        "endpoint": "/api/rps/leaderboard",
         "method": "GET",
     },
 ]
