@@ -7,8 +7,9 @@ from src.client.request_client import RequestClient
 
 client = RequestClient()
 test_data = [
+    {"endpoint": "/api/airdrop-pool", "method": "GET"},
     {
-        "endpoint": "/api/rps/leaderboard",
+        "endpoint": "/api/chests/leaderboard",
         "method": "GET",
     },
 ]
