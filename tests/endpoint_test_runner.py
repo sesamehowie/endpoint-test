@@ -9,7 +9,7 @@ client = RequestClient()
 test_data = [
     {"endpoint": "/api/airdrop-pool", "method": "GET"},
     {
-        "endpoint": "/api/chests/leaderboard",
+        "endpoint": "/api/monroll/leaderboard",
         "method": "GET",
     },
 ]

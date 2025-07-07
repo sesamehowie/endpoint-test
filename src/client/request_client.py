@@ -19,7 +19,7 @@ class RequestClient:
             data = response.json()
         except requests.JSONDecodeError:
             logger.warning("Failed to fetch raw JSON, trying to get text info...")
-            if response.text.startswith("{"):
+            if response.text.startswith("{") or response.text.startswith("["):
                 data = json.loads(response.text)
         finally:
             return data
