@@ -7,11 +7,7 @@ from src.client.request_client import RequestClient
 
 client = RequestClient()
 test_data = [
-    {"endpoint": "/api/airdrop-pool", "method": "GET"},
-    {
-        "endpoint": "/api/monroll/leaderboard",
-        "method": "GET",
-    },
+    {"endpoint": "/api/priceFeed", "method": "GET"},
 ]
 
 
