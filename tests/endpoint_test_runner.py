@@ -8,7 +8,7 @@ from src.client.request_client import RequestClient
 client = RequestClient()
 test_data = [
     {
-        "endpoint": "/api/priceFeed/0xe62df6c8b4a85fe1a67db66b72dc658afedf0f4a415b43",
+        "endpoint": "/api/priceCache",
         "method": "GET",
         "params": {},
     },
