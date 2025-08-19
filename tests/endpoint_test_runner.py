@@ -8,9 +8,10 @@ from src.client.request_client import RequestClient
 client = RequestClient()
 test_data = [
     {
-        "endpoint": "/api/priceCache",
+        "endpoint": "/api/prediction/player-history/degen",
         "method": "GET",
         "params": {},
+        "headers": {"authorization": "Bearer "},
     },
 ]
 
